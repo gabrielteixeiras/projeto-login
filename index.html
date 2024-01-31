@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Hospital</title>
+
+    <link rel="stylesheet" href="styles/vars.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+        integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+
+</head>
+<body>
+    <main>
+        <section class="login">
+            <div id="image">
+
+            </div>
+
+            <div class="login__text">
+
+                <div class="text">
+                    <h1>Login</h1>
+                    <p>Seja bem-vindo(a) novamente. Faça login para agendar consultas, acompanhar o andamento do</p>
+                </div>
+
+                <form class="login__form" action="login.php" method="post">
+                    <div class="login-email">
+                        <p class="login__email">
+                            <label for="email">
+                                <span class="fa fa-user"></span>
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                        </p>
+                    </div>
+
+                    <div class="login-senha">
+                        <p class="login__senha">
+                            <label for="senha">
+                                <span class="fa fa-key"></span>
+                            </label>
+                            <input type="password" name="senha" id="senha" placeholder="Sua senha">
+                        </p>
+                    </div>
+
+                    <div class="login-enviar">
+                        <p>
+                            <input class="login__button" type="submit" value="Entrar">
+                        </p>
+                    </div>
+
+                    <div class="login-esqueci-senha">
+                        <p>
+                            <input class="login__esqueci" type="submit" value="Esqueci a senha">
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
