@@ -18,47 +18,56 @@
 <body>
     <main>
         <section class="login">
-            <div id="image">
 
-            </div>
+            <div id="image"></div>
 
             <div class="login__text">
 
                 <div class="text">
+
                     <h1>Login</h1>
-                    <p>Seja bem-vindo(a) novamente. Faça login para agendar consultas, acompanhar o andamento do</p>
+                    <p>Seja bem-vindo(a) novamente. Faça login para agendar os seus exames, acompanhar consultas e muito mais.</p>
+
                 </div>
 
-                <form class="login__form" action="login.php" method="post">
+                <form class="login__form" action="login.php" method="post" autocomplete="on">
+
                     <div class="login-email">
+
                         <p class="login__email">
-                            <label for="email">
-                                <span class="fa fa-user"></span>
-                            </label>
-                            <input type="email" name="email" id="email" placeholder="Seu e-mail">
+                            <span class="fa fa-user"></span>
+                            <input type="email" name="email" id="email" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
+                            <label for="email">Login</label>
                         </p>
+
                     </div>
 
                     <div class="login-senha">
+
                         <p class="login__senha">
-                            <label for="senha">
-                                <span class="fa fa-key"></span>
-                            </label>
-                            <input type="password" name="senha" id="senha" placeholder="Sua senha">
+                            <span class="fa fa-key"></span>
+                            <input type="password" name="senha" id="senha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                            <label for="email">Senha</label>
                         </p>
+
                     </div>
 
-                    <div class="login-enviar">
+                    <div class="login-entrar">
+
                         <p>
                             <input class="login__button" type="submit" value="Entrar">
                         </p>
+
                     </div>
 
                     <div class="login-esqueci-senha">
-                        <p>
-                            <input class="login__esqueci" type="submit" value="Esqueci a senha">
-                        </p>
+
+                        <a href="esqueci.html" class="login__esqueci">
+                            Esqueci a senha <span class="fa fa-envelope"><span>
+                        </a>
+
                     </div>
+
                 </form>
             </div>
         </section>

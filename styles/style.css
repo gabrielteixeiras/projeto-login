@@ -19,6 +19,7 @@ main {
     width: 100vw;
 }
 
+/* CONFIGURAÇÕES DO CONTAINER */
 section.login {
     position: absolute;
     top: 50%;
@@ -26,12 +27,13 @@ section.login {
     transform: translate(-50%, -50%);
 
     background-color: #fff;
-    height: 510px;
+    height: 515px;
     width: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
 }
 
+/* CONFIGURAÇÕES DE IMAGEM, TÍTULO E TEXTO DO CONTAINER */
 .login #image {
     background: var(--color-purple) url(../src/images/pexels-thiago-japyassu-9136264.jpg) left center no-repeat;
     background-size: cover;
@@ -50,87 +52,104 @@ section.login {
     font-size: 13px;
 }
 
+/* CONFIGURAÇÕES DE ALINHAMENTO DO FORMULÁRIO */
 .login__form div{
     margin: auto;
     margin-bottom: 5px;
 }
 
+.login__form {
+    padding: 10px;
+}
+
+form label {
+    display: none;
+
+}
+
+/* CONFIGURAÇÕES DO FORMULÁRIO E-MAIL */
 .login__form .login-email {
+    display: block;
     background-color: var(--color-purple);
-    width: 200px;
+
+    width: 100%;
     height: 40px;
-    border: 0;
-    border-radius: 7px;
+    border-radius: 8px;
     text-align: center;
 }
 
 .login__form .fa-user {
     font-size: 20px;
     color: #fff;
+    padding: 10px;
 }
 
 .login__form #email {
     background-color: var(--color-light-green);
-    height: 35px;
-    border: 0;
-    border-radius: 7px;
+    width: calc(100% - 42px);
+    height: 39px;
+    transform: translateY(-1.7px);
+    border: 2px solid var(--color-purple);
+    border-radius: 8px;
     padding-left: 10px;
 }
 
+/* CONFIGURAÇÕES DO FORMULÁRIO SENHA */
 .login__form .login-senha {
+    display: block;
     background-color: var(--color-purple);
-    width: 200px;
+
+    width: 100%;
     height: 40px;
-    border: 0;
-    border-radius: 7px;
+    border-radius: 8px;
     text-align: center;
 }
 
 .login__form .fa-key {
     font-size: 20px;
     color: #fff;
+    padding: 10px;
 }
 
 .login__form #senha {
     background-color: var(--color-light-green);
-    height: 35px;
-    border: 0;
-    border-radius: 7px;
+    width: calc(100% - 44.5px);
+    height: 39px;
+    transform: translateY(-1.7px);
+    border: 2px solid var(--color-purple);
+    border-radius: 8px;
     padding-left: 10px;
 }
 
-.login__form .login-enviar {
+/* CONFIGURAÇÕES DO DO BOTÃO ENTRAR */
+.login-entrar input[type=submit] {
+    display: block;
     background-color: var(--color-green);
-    width: 200px;
+    color: #fff;
+
+    width: 100%;
     height: 40px;
     border: 0;
-    border-radius: 7px;
-    text-align: center;
-    cursor: pointer;
-}
+    border-radius: 5px;
 
-.login-enviar .login__button {
-    background: transparent;
-    color: #fff;
-    border: 0;
+    text-align: center;
     font-size: 15px;
     cursor: pointer;
 }
 
-.login__form .login-esqueci-senha {
+/* CONFIGURAÇÕES DO BOTÃO ESQUECI A SENHA*/
+.login-esqueci-senha .login__esqueci {
+    display: block;
     background-color: #fff;
-    width: 200px;
-    height: 40px;
+    color: var(--color-dark-green);
+
     border: 1px solid var(--color-green);
     border-radius: 7px;
-    text-align: center;
-    cursor: pointer;
-}
+    width: 100%;
+    height: 40px;
+    padding-top: 7px;
 
-.login-esqueci-senha .login__esqueci {
-    background: transparent;
-    color: var(--color-dark-green);
-    border: 0;
+    text-align: center;
+    text-decoration: none;
     font-size: 15px;
-    cursor: pointer;
 }
