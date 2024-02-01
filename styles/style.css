@@ -30,7 +30,10 @@ section.login {
     width: 250px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.534);
+
     transform: translate(-50%, -50%);
+    transition: .3s;
+    
 }
 
 /* CONFIGURAÇÕES DE IMAGEM, TÍTULO E TEXTO DO CONTAINER */
