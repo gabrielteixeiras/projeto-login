@@ -58,7 +58,7 @@ section.login {
 /* CONFIGURAÇÕES DE ALINHAMENTO DO FORMULÁRIO */
 .login__form div{
     margin: auto;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .login__form {
@@ -155,4 +155,13 @@ form label {
     text-align: center;
     text-decoration: none;
     font-size: 15px;
+}
+
+/* CONFIGURAÇÕES DO BOTÃO CADASTRO*/
+.login-cadastro .login__cadastro {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
 }

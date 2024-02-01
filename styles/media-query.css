@@ -3,6 +3,7 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body, html {
         background-image: linear-gradient(to top, var(--color-green), var(--color-purple));
+        height: 100%;
     }
     
     section.login {
@@ -20,11 +21,12 @@
 
     .login__text .text h1 {
         margin-top: 50px;
+        font-size: 35px;
     }
     
     .login__text .text p {
         text-align: center;
-        padding: 10px 10px 0 200px;
+        padding: 30px 10px 0 200px;
         font-size: 18px;
     }
 
@@ -32,46 +34,157 @@
     .login__form .login-email {  
         float: right;
         width: 70%;
+        height: 50px;
         margin-bottom: 10px;
-
+        border-radius: 15px;
     }
     
     .login__form #email {
         width: calc(100% - 42px);
-        height: 39px;
+        height: 49px;
+        margin-top: 2.2px;
+        font-size: 16px;
+        border-radius: 15px;
     }
 
 
     .login__form .login-senha {
         float: right;
         width: 70%;
+        height: 50px;
         margin-bottom: 10px;
+        border-radius: 15px;
     }
     
     .login__form #senha {
-        width: calc(100% - 44.5px);
-        height: 39px;
+        width: calc(100% - 44.4px);
+        height: 49px;
+        margin-top: 2.2px;
+        font-size: 16px;
+        border-radius: 15px;
     }
 
     
     .login-entrar input[type=submit] {    
         float: right;
         width: 70%;
-        height: 40px;
-        font-size: 15px;
+        height: 50px;
+        font-size: 20px;
         margin-bottom: 10px;
+        border-radius: 15px;
     } 
 
 
     .login-esqueci-senha .login__esqueci {
         float: right;
         width: 70%;
-        height: 40px;
-        font-size: 15px;
+        height: 50px;
+        font-size: 20px;
+        padding-top: 10px;
+        border-radius: 15px;
+        margin-bottom: 10px;
     }
 
 
     .login__form {
         margin: 20px 0 0 10px;
     }
+
+    /* CONFIGURAÇÕES DO BOTÃO CADASTRO*/
+    .login-cadastro .login__cadastro {
+        font-size: 17px;
+}
+}
+
+
+@media screen and (min-width: 992px) {
+    body, html {
+        background-image: linear-gradient(to top, var(--color-green), var(--color-purple));
+    }
+    
+    section.login {
+        width: 80vw;
+    }
+
+    .login #image {
+        float: right;
+        width: 50%;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+    }
+
+
+    .login__text .text h1 {
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    
+    .login__text .text p {
+        text-align: center;
+        padding: 30px 200px 0 10px;
+        font-size: 18px;
+    }
+
+
+    .login__form .login-email {  
+        float: left;
+        width: 50%;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    
+    .login__form #email {
+        width: calc(100% - 42px);
+        height: 49px;
+        margin-top: 2.2px;
+        font-size: 18px;
+        border-radius: 15px;
+    }
+
+
+    .login__form .login-senha {
+        float: left;
+        width: 50%;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    
+    .login__form #senha {
+        width: calc(100% - 44.4px);
+        height: 49px;
+        margin-top: 2.2px;
+        font-size: 18px;
+        border-radius: 15px;
+    }
+
+    
+    .login-entrar input[type=submit] {    
+        float: left;
+        width: 50%;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    } 
+
+
+    .login-esqueci-senha .login__esqueci {
+        float: left;
+        width: 50%;
+        height: 50px;
+        font-size: 20px;
+        padding-top: 10px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+
+
+    .login__form {
+        margin: 30px 10px 0 0;
+    }
+    /* CONFIGURAÇÕES DO BOTÃO CADASTRO*/
+    .login-cadastro .login__cadastro {
+        font-size: 17px;
 }
